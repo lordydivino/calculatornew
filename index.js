@@ -31,7 +31,7 @@ buttons.forEach(element =>{
    element.addEventListener('click',(b)=>{
        if (b.target.innerText == '=') {
            string = String(eval(string))
-           inputBox.value = Number(string).toFixed(1);
+           inputBox.value = Number(string);
        }
        else if(b.target.innerText == 'RESET'){
            string = ''
